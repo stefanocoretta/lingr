@@ -1,0 +1,19 @@
+---
+title: "Title"
+author: "Author"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    citation_package: natbib
+bibliography: linguistics
+biblio-style: unified
+mainfont: Times New Roman
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Lorem ipsum.
+
