@@ -1,7 +1,7 @@
 Package: lingr
 Type: Package
 Title: Template For Linguistics Articles
-Version: 1.0.0
+Version: 1.0.1
 Date: 2018-12-18
 Authors@R: person("Stefano", "Coretta", email = paste0("stefano.coretta", "@", "me.com"),
   role = c("aut", "cre"))
