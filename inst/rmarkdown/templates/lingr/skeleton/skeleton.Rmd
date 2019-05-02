@@ -3,12 +3,21 @@ title: "Title"
 author: "Author"
 output:
   pdf_document:
-    latex_engine: xelatex
     citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: xelatex
+    number_sections: yes
+    dev: cairo_pdf
 bibliography: linguistics
 biblio-style: unified
 mainfont: Times New Roman
-fontsize: 11pt
+fontsize: 12pt
+papersize: a4
+indent: true
+params:
+  version: 0.1
+  version-date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}

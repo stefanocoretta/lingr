@@ -1,8 +1,8 @@
 Package: lingr
 Type: Package
 Title: Template For Linguistics Articles
-Version: 1.0.1
-Date: 2018-12-18
+Version: 1.0.2
+Date: 2019-05-02
 Authors@R: person("Stefano", "Coretta", email = paste0("stefano.coretta", "@", "me.com"),
   role = c("aut", "cre"))
 Description: This package provides a basic RMarkdown template for
