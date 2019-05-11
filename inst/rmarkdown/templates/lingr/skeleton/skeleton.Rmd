@@ -2,30 +2,28 @@
 title: "Title"
 author: "Author"
 output:
-  pdf_document:
+  lingr::lingr_article:
     citation_package: natbib
     fig_caption: yes
-    keep_tex: yes
-    latex_engine: xelatex
-    number_sections: yes
     dev: cairo_pdf
-bibliography: linguistics
-biblio-style: unified
 mainfont: Times New Roman
 fontsize: 12pt
 papersize: a4
+geometry: margin=1in
 indent: true
-params:
-  version: 0.1
-  version-date: "`r Sys.Date()`"
+bibliography: linguistics
+biblio-style: unified
+version: 0.1
+version-date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = normalizePath("./"))
+knitr::opts_knit$set(root.dir = here::here())
 library(tidyverse)
 theme_set(theme_minimal())
 ```
 
-Lorem ipsum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue imperdiet dapibus. Mauris sit amet quam sodales, consectetur tellus sit amet, rhoncus turpis. Vestibulum lectus lacus, ultrices posuere ultrices ut, viverra ut lectus. In eleifend ornare laoreet. Nullam magna libero, facilisis scelerisque elementum in, vulputate ac quam. Donec sed augue semper orci elementum tincidunt. Integer eu fermentum magna. Donec et pharetra est.
 
+Curabitur in nisi pharetra, tempus ligula quis, dictum magna. Mauris sed venenatis ligula, at lacinia quam. Aliquam pharetra nulla lorem, eget feugiat tortor sagittis ut. Nunc ultricies blandit justo, sed pellentesque est blandit ultrices. Mauris porta volutpat est sed feugiat. In ut aliquet nisl. Phasellus dolor velit, accumsan quis ante eget, sodales gravida ante.
