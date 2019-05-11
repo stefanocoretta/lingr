@@ -13,8 +13,9 @@ geometry: margin=1in
 indent: true
 bibliography: linguistics
 biblio-style: unified
-version: 0.1
-version-date: "`r Sys.Date()`"
+params:
+  version: 0.1
+  version-date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}

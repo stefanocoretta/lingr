@@ -221,7 +221,7 @@ $else$
   hidelinks,
 $endif$
   pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
+% \urlstyle{same} % disable monospaced font for URLs
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allow verbatim text in footnotes
 $endif$
@@ -384,7 +384,15 @@ $if(logo)$
 $endif$
 $endif$
 
+\usepackage[absolute]{textpos}
+
 \begin{document}
+$if(hide-version)$
+$else$$if(params.version)$
+\begin{textblock}{3}(0.2,0.2)
+  \textcolor{lightgray}{v$params.version$ ($params.version-date$)}
+\end{textblock}
+$endif$$endif$
 $if(has-frontmatter)$
 \frontmatter
 $endif$
