@@ -262,7 +262,6 @@ $else$
 \makesavenoteenv{longtable}
 $endif$
 $endif$
-$if(graphics)$
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -273,6 +272,7 @@ $if(graphics)$
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 % Set default figure placement to htbp
+$if(graphics)$
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
