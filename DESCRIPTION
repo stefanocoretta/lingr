@@ -1,8 +1,8 @@
 Package: lingr
 Type: Package
 Title: Template For Linguistics Articles
-Version: 1.2.1
-Date: 2019-05-11
+Version: 1.2.1.9000
+Date: 2020-12-29
 Authors@R: person("Stefano", "Coretta", email = paste0("stefano.coretta", "@", "me.com"),
   role = c("aut", "cre"))
 Description: This package provides a basic RMarkdown template for
@@ -10,5 +10,5 @@ Description: This package provides a basic RMarkdown template for
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Imports: rmarkdown

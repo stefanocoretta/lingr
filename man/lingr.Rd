@@ -3,7 +3,6 @@
 \docType{package}
 \name{lingr}
 \alias{lingr}
-\alias{lingr-package}
 \title{lingr: Template For Linguistics Articles.}
 \description{
 This package provides a basic RMarkdown template for linguisics articles
