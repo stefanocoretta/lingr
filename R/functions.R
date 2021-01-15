@@ -10,12 +10,21 @@
 #'
 #' @export
 lingr_article <- function(...) {
-  lingr_template <- system.file("rmarkdown/templates/lingr/resources", "template.tex", package = "lingr")
   rmarkdown::pdf_document(
     ...,
     latex_engine = "xelatex",
     keep_tex = TRUE,
     number_sections = TRUE,
-    template = lingr_template
+    template = lingr_resources("template.tex")
   )
+}
+
+#' Get files from the resources directory
+#'
+#' Utility function to get files from the resources directory of the package.
+#'
+#' @export
+#' @keywords internal
+lingr_resources <- function(path) {
+  system.file("rmarkdown/templates/lingr/resources", path, package = "lingr")
 }
